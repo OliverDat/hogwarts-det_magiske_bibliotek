@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogwarts Bibliotek</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="container">
+    <header>
+        <h1>Hogwarts Bibliotek</h1>
+        <p>Find og lån bøger fra det magiske bibliotek.</p>
+        <!-- Link til siden, hvor en ny bog kan oprettes. -->
+        <a class="button" href="create.html">Opret ny bog</a>
+    </header>
+
+    <!-- JavaScript viser succes- og fejlbeskeder her. -->
+    <p id="message"></p>
+
+    <section>
+        <h2>Alle bøger</h2>
+        <!-- JavaScript indsætter et bogkort for hver bog. -->
+        <div id="book-list"></div>
+    </section>
+</main>
+
+<script src="public.js"></script>
+</body>
+</html>

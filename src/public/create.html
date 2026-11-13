@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opret bog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="container">
+    <header>
+        <h1>Opret en ny bog</h1>
+        <a class="button secondary" href="index.html">Tilbage til biblioteket</a>
+    </header>
+
+    <!-- Formularens data sendes til API'et af public.js. -->
+    <form id="create-book-form">
+        <label for="title">Titel</label>
+        <input type="text" id="title" required>
+
+        <label for="author">Forfatter</label>
+        <input type="text" id="author" required>
+
+        <button type="submit">Opret bog</button>
+    </form>
+
+    <p id="message"></p>
+</main>
+
+<script src="public.js"></script>
+</body>
+</html>
